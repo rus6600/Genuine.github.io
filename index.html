@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"
     />
     <link
       rel="stylesheet"
@@ -386,94 +386,69 @@
       </div>
     </section>
     <section class="carousel">
-      <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <div class="carousel-card">
-                <img src="img/cards/c1.png" alt="" />
-                <h4>Покупайте у доверенных поставщиков</h4>
-                <p>Доверенный торговый посредник – хороший вариант</p>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="carousel-card">
-                <img src="img/cards/c2.png" alt="" />
-                <h4>
-                  Пользуйтесь только лицензионным программным обеспечением
-                </h4>
-                <p>
-                  Программное обеспечение должно быть соответствующе
-                  лицензировано, независимо от того, это Windows или Office.
-                </p>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="carousel-card">
-                <img src="img/cards/c3.png" alt="" />
-                <h4>Задавайте вопросы о слишком заманчивых предложениях</h4>
-                <p>
-                  Они часто приводят или могут привести к дополнительным
-                  затратам, связанным с потерей или кражей личных данных.
-                </p>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="carousel-card">
-                <img src="img/cards/c4.png" alt="" />
-                <h4>Проверяйте источники ключей продуктов</h4>
-                <p>
-                  В случае использования цифровых, скачиваемых из Интернета
-                  версий необходимо убедиться, что ключ продукта получен из
-                  источника, которому можно доверять.
-                </p>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="carousel-card">
-                <img src="img/cards/c5.png" alt="" />
-                <h4>Проверяйте упаковку</h4>
-                <p>
-                  Убедитесь, что на упаковке имеется подлинный логотип
-                  корпорации Майкрософт и идентификационные данные торговой
-                  марки. Избегайте отдельных наклеек или карточек с ключами
-                  продукта, которые не гарантируют права на использование нового
-                  программного обеспечения Майкрософт.
-                </p>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="carousel-card">
-                <img src="img/cards/c6.png" alt="" />
-                <h4>Вскрывайте упаковку первым</h4>
-                <p>
-                  Физическая упаковка должна быть надлежащим образом запечатана,
-                  чтобы гарантировать, что продукт ранее не использовался. Ключи
-                  продукта разработаны для использования на одном или
-                  ограниченном количестве устройств
-                </p>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="carousel-card">
-                <img src="img/cards/c7.png" alt="" />
-                <h4>Ваши устройства будут в актуальном состоянии</h4>
-                <p>
-                  Регулярно выполняйте обновления программного обеспечения,
-                  которые позволяют оставаться защищенным от потенциальных
-                  проблем безопасности.
-                </p>
-              </div>
-            </li>
-          </ul>
+      <div
+        class="gallery js-flickity"
+        data-flickity-options='{ "wrapAround": false }'
+      >
+        <div class="gallery-cell">
+          <img class="gallery-cell__img" src="img/cards/c1.png" alt="" />
+          <h4>Покупайте у доверенных поставщиков</h4>
+          <p>Доверенный торговый посредник – хороший вариант</p>
         </div>
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-            <i class="fa f fa-chevron-left"></i>
-          </button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-            <i class="fa f fa-chevron-right"></i>
-          </button>
+        <div class="gallery-cell">
+          <img class="gallery-cell__img" src="img/cards/c2.png" alt="" />
+          <h4>Пользуйтесь только лицензионным программным обеспечением</h4>
+          <p>
+            Программное обеспечение должно быть соответствующе лицензировано,
+            независимо от того, это Windows или Office.
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <img class="gallery-cell__img" src="img/cards/c3.png" alt="" />
+          <h4>Задавайте вопросы о слишком заманчивых предложениях</h4>
+          <p>
+            Они часто приводят или могут привести к дополнительным затратам,
+            связанным с потерей или кражей личных данных.
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <img class="gallery-cell__img" src="img/cards/c4.png" alt="" />
+          <h4>Проверяйте источники ключей продуктов</h4>
+          <p>
+            В случае использования цифровых, скачиваемых из Интернета версий
+            необходимо убедиться, что ключ продукта получен из источника,
+            которому можно доверять.
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <img class="gallery-cell__img" src="img/cards/c5.png" alt="" />
+          <h4>Проверяйте упаковку</h4>
+          <p>
+            Убедитесь, что на упаковке имеется подлинный логотип корпорации
+            Майкрософт и идентификационные данные торговой марки. Избегайте
+            отдельных наклеек или карточек с ключами продукта, которые не
+            гарантируют права на использование нового программного обеспечения
+            Майкрософт.
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <img class="gallery-cell__img" src="img/cards/c6.png" alt="" />
+          <h4>Вскрывайте упаковку первым</h4>
+          <p>
+            Физическая упаковка должна быть надлежащим образом запечатана, чтобы
+            гарантировать, что продукт ранее не использовался. Ключи продукта
+            разработаны для использования на одном или ограниченном количестве
+            устройств
+          </p>
+        </div>
+        <div class="gallery-cell">
+          <img class="gallery-cell__img" src="img/cards/c7.png" alt="" />
+          <h4>Ваши устройства будут в актуальном состоянии</h4>
+          <p>
+            Регулярно выполняйте обновления программного обеспечения, которые
+            позволяют оставаться защищенным от потенциальных проблем
+            безопасности.
+          </p>
         </div>
       </div>
     </section>
@@ -484,7 +459,7 @@
         </h2>
         <div class="genuine-software__cards">
           <div class="genuine-software__card">
-            <img src="/img/cards//buy-card-3.jpg" alt="computers" />
+            <img src="/img/cards/buy-card-3.jpg" alt="computers" />
             <div class="genuine-software__card-desc">
               <h3 class="fs-600">Компьютеры</h3>
               <p>
@@ -495,7 +470,7 @@
             </div>
           </div>
           <div class="genuine-software__card">
-            <img src="/img/cards//buy-card-2.jpg" alt="computers" />
+            <img src="/img/cards/buy-card-2.jpg" alt="computers" />
             <div class="genuine-software__card-desc">
               <h3 class="fs-600">Упакованное программное обеспечение</h3>
               <p>
@@ -507,7 +482,7 @@
           </div>
 
           <div class="genuine-software__card">
-            <img src="/img/cards//buy-card-1.jpg" alt="computers" />
+            <img src="/img/cards/buy-card-1.jpg" alt="computers" />
             <div class="genuine-software__card-desc">
               <h3 class="fs-600">
                 Загрузка цифровых версий программного обеспечения
@@ -533,75 +508,6 @@
         </div>
       </div>
     </footer>
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-
-    <script>
-      const config = {
-        type: "carousel",
-        perView: 1,
-        focusAt: "center",
-        peek: 800,
-        breakpoints: {
-          3000: {
-            perView: 1,
-            peek: 700,
-          },
-          2800: {
-            perView: 1,
-            peek: 700,
-          },
-          2600: {
-            perView: 1,
-            peek: 650,
-          },
-          2400: {
-            perView: 1,
-            peek: 600,
-          },
-          2200: {
-            perView: 1,
-            peek: 520,
-          },
-          2000: {
-            perView: 1,
-            peek: 500,
-          },
-          1900: {
-            perView: 1,
-            peek: 500,
-          },
-          1800: {
-            perView: 1,
-            peek: 550,
-          },
-          1700: {
-            perView: 1,
-            peek: 450,
-          },
-          1500: {
-            perView: 1,
-            peek: 350,
-          },
-          1200: {
-            perView: 1,
-            peek: 300,
-          },
-          1090: {
-            perView: 1,
-            peek: 250,
-          },
-          1000: {
-            perView: 1,
-            peek: 200,
-          },
-          700: {
-            perView: 1,
-            peek: 0,
-          },
-        },
-      };
-
-      new Glide(".glide", config).mount();
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
   </body>
 </html>
