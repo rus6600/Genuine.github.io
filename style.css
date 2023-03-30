@@ -115,18 +115,22 @@ html {
 
 .header__top-content {
   display: flex;
-  height: 90px;
   padding: 1rem;
+  gap: 1rem;
   justify-content: space-between;
+  align-items: center;
 }
 
-.header__logo {
+.header__top-link {
   height: 100%;
 }
 
 .header__logo-microsoft {
-  padding: 1rem;
+  height: 30px;
+}
 
+.header__logo-partner {
+  height: 60px;
 }
 
 .header__bottom {
@@ -354,7 +358,6 @@ html {
   gap: 1rem;
 }
 
-
 .gallery-cell {
   display: flex;
   padding: 1rem;
@@ -365,17 +368,25 @@ html {
   color: white;
   justify-self: center;
   background-color: #274b47;
-  width: 300px;
+  width: 100%;
 }
 
 .gallery-cell__img {
-  width:100%;
-  margin-bottom: .5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
   height: 200px;
   object-fit: cover;
 }
 
+.gallery-cell {
+  width: 100%;
+}
 
+@media screen and (min-width: 768px) {
+  .gallery-cell {
+    width: 20%;
+  }
+}
 
 .footer-content {
   display: flex;
@@ -423,11 +434,6 @@ html {
     margin-bottom: 1rem;
   }
 
-
-  .gallery-cell {
-    width: 100%;
-  }
-
   .software-piracy__tabs {
     display: grid;
     grid-template-columns: 1fr;
@@ -443,7 +449,6 @@ html {
     object-fit: cover;
   }
 }
-
 
 /*utility classes */
 
