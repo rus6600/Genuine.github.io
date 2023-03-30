@@ -352,6 +352,11 @@ html {
   text-align: left;
 }
 
+.genuine-software__card-img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .genuine-software__card-desc {
   display: flex;
   flex-direction: column;
