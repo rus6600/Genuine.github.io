@@ -423,6 +423,11 @@ html {
     margin-bottom: 1rem;
   }
 
+
+  .gallery-cell {
+    width: 100%;
+  }
+
   .software-piracy__tabs {
     display: grid;
     grid-template-columns: 1fr;
